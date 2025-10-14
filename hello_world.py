@@ -118,7 +118,7 @@ def lucas(named_variable):
         omar.append(omar[n - 1] + omar[n - 2])
     return omar
 
-print(lucas(6))
+print(lucas(100))
 
 
 

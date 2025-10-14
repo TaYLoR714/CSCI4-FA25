@@ -95,6 +95,36 @@ def create_name(first, last):
 full_name = create_name("taylor", "reynolds")
 print(full_name)
 
+def main(x,y,z):
+    print(x,y,z)
+
+l = [1,2,3,4,5,5]
+i = [0,3,4,4,5,5]
+main("hello", l[i[1]],l[i[2]])
+
+
+
+#lucas numbers
+
+def lucas(named_variable):
+    omar = [2, 1]
+#0 -> 2, 1 -> 1
+# omar.append(omar[1] + omar[0])
+# omar[2] = omar[1] + omar[0]
+
+    for n in range(2, named_variable):
+    # for n which is equal to 2, 3, 4, 5
+    # omar[n] = omar[n - 1] + omar[n - 2]
+        omar.append(omar[n - 1] + omar[n - 2])
+    return omar
+
+print(lucas(6))
+
+
+
+
+
+
 
 
 print ("hello world")

@@ -120,7 +120,46 @@ def lucas(named_variable):
 
 print(lucas(100))
 
+#calculate 2 to the power of 3
+result = 2 ** 3
+print(result)
+#calculate 2 to the power of 10
+result = 2 ** 10
+print(result)
+#calculate 2 to the power of 999
+result = 2 ** 999
+print(result)
+#calculate 2 to the power of 256
+result = 2 ** 20
+print(result)
 
+    #Mersenne Prime Test
+result = 2 ** 31 - 1
+print(result)
+
+    # Powers of Two in Loop
+print("Powers of two in a loop:")
+for i in range(10):  # Generates power of 2, 10 times in a row?
+    print(2 ** i)
+
+    #More Mersenne Prime Test
+result = 2 ** 4 - 1 
+print(result)
+
+    #Another test for Mersenne in a loop
+print("Mersenne Powers of two in a loop:")
+for m in range(10):  # Generates Mersenne power of 2, 10 times in a row? -1
+    print(2 ** m - 1)
+
+    #Another test for Mersenne in a loop
+print("Mersenne Powers of two in a loop:")
+for x in range(20):  # Generates Mersenne power of 2, 20 times in a row? -1
+    print(2 ** x - 1)
+
+    #Test can you put 500 Mersenne Numbers in a loop?
+print("Mersenne Powers of two in a loop:")
+for x in range(250):  # Generates Mersenne power of 2, 250 times in a row? -1
+    print(2 ** x - 1)
 
 
 

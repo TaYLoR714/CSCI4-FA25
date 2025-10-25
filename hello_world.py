@@ -158,8 +158,22 @@ for x in range(20):  # Generates Mersenne power of 2, 20 times in a row? -1
 
     #Test can you put 500 Mersenne Numbers in a loop?
 print("Mersenne Powers of two in a loop:")
-for x in range(250):  # Generates Mersenne power of 2, 250 times in a row? -1
+for x in range(5):  # Generates Mersenne power of 2, 5 times in a row? -1
     print(2 ** x - 1)
+
+#testcode midterm
+def get_powers(k):
+    #k is the highest power we want to calculate
+    powers_list = [] #empty list
+    for n in range(k + 1): # n will move from 0->k
+        # ** operator means to the power of 
+        term = 2**n
+        powers_list.append(term) #adds term to list
+    return powers_list    
+#example: get powers from 260 up to 2^10
+my_sequence = get_powers(10)
+print(my_sequence)
+
 
 
 

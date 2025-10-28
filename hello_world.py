@@ -170,7 +170,7 @@ def get_powers(k):
         term = 2**n
         powers_list.append(term) #adds new term to list
     return powers_list    
-#example: get powers from 260 up to 2^10
+#example: get powers from 2^1 up to 2^10
 my_sequence = get_powers(10)
 print(my_sequence)
 

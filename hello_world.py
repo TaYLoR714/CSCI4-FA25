@@ -165,10 +165,10 @@ for x in range(5):  # Generates Mersenne power of 2, 5 times in a row? -1
 def get_powers(k):
     #k is the highest power we want to calculate
     powers_list = [] #empty list
-    for n in range(k + 1): # n will move from 0->k
+    for n in range(k + 1): # k will move from 0->k
         # ** operator means to the power of 
         term = 2**n
-        powers_list.append(term) #adds term to list
+        powers_list.append(term) #adds new term to list
     return powers_list    
 #example: get powers from 260 up to 2^10
 my_sequence = get_powers(10)

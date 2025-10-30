@@ -194,7 +194,7 @@ print(taylors_queue.pop(0))
 print("Queue after removing Everything:", taylors_queue)
 
 
-#------
+#------  QUEUES
 #queues push things onto them
 def next_person(q,x):
     q.apend(x)
@@ -203,6 +203,89 @@ def next_person(q,x):
 #queues pop things off
 def give_bread(q):
     return q.pop
+
+#-------Queue (waiting line)
+q = []
+head = 0
+
+def tail (q):
+    return len(q)
+
+def push (q,e):
+    q.append(e)
+    return q
+
+
+def pop (q):
+    return q.pop(0)(head)
+
+#-------Stacks and Homework
+stack = []
+
+# append() function to push element in the stack
+stack.append('element 1')
+stack.append('element 2')
+stack.append('element 3')
+
+print('My Stack')
+print(stack)
+# pop() function to pop element from stack in last in first out
+print('\nElements popped from stack:')
+print(stack.pop())
+print(stack.pop())
+print(stack.pop())
+
+print('\nStack after elements are popped:')
+print(stack)
+# uncommenting print(stack.pop()) will cause an IndexError as the stack is now empty
+
+#new stack test
+class stack: 
+  def __init__(self): 
+    self.__index = [] 
+
+  def __len__(self): 
+    return len(self.__index) 
+
+  def push(self,item): 
+    self.__index.insert(0,item) 
+
+#------
+class Stack(list):
+    def push(self, item):
+        self.append(item)
+    def size(self):
+        return len(self)
+    def is_empty(self):
+        return not self
+    
+#-------New Stack Test
+
+if __name__ == "__main__":
+    my_stack = Stack()
+
+    print(f"Is stack empty initially? {my_stack.is_empty()}") # True
+
+    my_stack.push("Apple")
+    my_stack.push("Banana")
+    my_stack.push("Cherry")
+
+    print(f"Stack size: {my_stack.size()}") # 3
+
+    popped_item = my_stack.pop()
+    print(f"Popped item: {popped_item}") # Cherry
+    print(f"Stack size after pop: {my_stack.size()}") # 2
+    pushed_item = my_stack.push("Apple")
+    print(f"Stack size after push: {my_stack.size()}")
+
+    my_stack.pop()
+    my_stack.pop()
+
+    print(f"Is stack empty now? {my_stack.is_empty()}") # True or False
+
+
+
+
 
 
 

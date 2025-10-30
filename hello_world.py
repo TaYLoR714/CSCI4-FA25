@@ -175,6 +175,37 @@ my_sequence = get_powers(10)
 print(my_sequence)
 
 
+#----------------------------------------
+#queue (waiting line)
+taylors_queue = []
+    #add people to queue
+taylors_queue.append('Task 1')
+taylors_queue.append('Task 2')
+taylors_queue.append('Task 3')
+taylors_queue.append('Task 4')
+print("My Bakery Queue:", taylors_queue)
+
+print("Elements removed from queue:")
+print(taylors_queue.pop(0))
+print(taylors_queue.pop(0))
+print(taylors_queue.pop(0))
+print(taylors_queue.pop(0))
+
+print("Queue after removing Everything:", taylors_queue)
+
+
+#------
+#queues push things onto them
+def next_person(q,x):
+    q.apend(x)
+    return q
+
+#queues pop things off
+def give_bread(q):
+    return q.pop
+
+
+
 
 
 

@@ -133,7 +133,7 @@ print(result)
 result = 2 ** 20
 print(result)
 
-    #Mersenne Prime Test one
+    #Mersenne Prime Test
 result = 2 ** 31 - 1
 print(result)
 
@@ -283,9 +283,32 @@ if __name__ == "__main__":
 
     print(f"Is stack empty now? {my_stack.is_empty()}") # True or False
 
+ #stack I stole from Google.com
+my_stack = []
+my_stack.append('A') # Push 'A'
+my_stack.append('B') # Push 'B'
+print(my_stack)      # Output: ['A', 'B']
+print(my_stack.pop()) # Pop 'B', Output: B
+print(my_stack)      # Output: ['A']
 
 
+#in class Stack Example from whiteboard
+l = []
 
+def push_q(s, e):
+    s.append(e)
+    return s
+
+def pop_q(s):
+    return s.pop(0)
+
+l = push_q(l , 1)
+l = push_q(l , 2)
+
+print(l)
+
+print(pop_q(l))
+print(pop_q(l))
 
 
 

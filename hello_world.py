@@ -250,7 +250,7 @@ class stack:
   def push(self,item): 
     self.__index.insert(0,item) 
 
-#------
+#------Moar test
 class Stack(list):
     def push(self, item):
         self.append(item)

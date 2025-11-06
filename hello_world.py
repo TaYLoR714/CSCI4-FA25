@@ -133,7 +133,7 @@ print(result)
 result = 2 ** 20
 print(result)
 
-    #Mersenne Prime Test
+    #Mersenne Prime Test one
 result = 2 ** 31 - 1
 print(result)
 

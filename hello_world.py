@@ -168,7 +168,7 @@ def get_powers(k):
     for n in range(k + 1): # k will move from 0->k
         # ** operator means to the power of 
         term = 2**n
-        powers_list.append(term) #adds new term to list
+        powers_list.append(term) #adds new term to list-
     return powers_list    
 #example: get powers from 2^1 up to 2^10
 my_sequence = get_powers(10)

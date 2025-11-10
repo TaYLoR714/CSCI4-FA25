@@ -49,3 +49,12 @@ elif choice == '4':
    print(num1,"/",num2,"=", divide(num1,num2))
 else:
    print("Invalid input")
+
+  # 5 + 5 = 10
+  # 1 + -1 = 0
+  # 0 - -1 = 1
+  # 0 % 5 = 0.0
+  # 4 % 2 = 2.0
+  # 2 x 1 = 2
+  # 3 x 2 = 6
+   print("21 total")

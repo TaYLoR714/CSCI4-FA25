@@ -24,3 +24,39 @@ point_dict = {'x': 5, 'y': 6}
 
 print("point at 0:", point[0])
 print("point_dict at 'x':", point_dict['x'])
+
+
+import math
+
+def euclidean_distance(point1, point2):
+    #Calculates the Euclidean distance between two points.
+
+    
+    #point1 : Coordinates of the first point.
+    #point2 : Coordinates of the second point.
+
+    #Returns: float: The Euclidean distance between the two points.
+
+    if len(point1) != len(point2):
+        raise ValueError("Points must have the same number of dimensions.")
+
+    squared_diff_sum = 0
+    for i in range(len(point1)):
+        squared_diff_sum += (point2[i] - point1[i]) ** 2
+
+    return math.sqrt(squared_diff_sum)
+
+# Example usage
+p1 = [1, 2, 3]
+p2 = [4, 6, 9]
+distance = euclidean_distance(p1, p2)
+print(f"Euclidean distance between {p1} and {p2}: {distance}")
+p1 = [2, 4, 6]
+p2 = [1, 8, 7]
+distance = euclidean_distance(p1, p2)
+print(f"Second Euclidean distance between {p1} and {p2}: {distance}")
+p1 = [2, 4]
+p2 = [-1, -8]
+distance = euclidean_distance(p1, p2)
+print(f"Second Euclidean distance between {p1} and {p2}: {distance}")
+

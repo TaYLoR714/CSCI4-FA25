@@ -1,9 +1,9 @@
 def calculate_euclidean_distance(point1, point2):
-    """
-    Calculates the Euclidean distance between two Cartesian points.
-    Input: Two tuples, e.g., (x1, y1) and (x2, y2)
-    Output: The distance (float)
-    """
+    
+    #Calculates the Euclidean distance between two Cartesian points.
+    #Input: Two tuples, e.g., (x1, y1) and (x2, y2)
+    #Output: The distance (float)
+    
     
     # 1. Unpack the coordinates (Store Cartesian coordinate )
     x1, y1 = point1
@@ -13,8 +13,8 @@ def calculate_euclidean_distance(point1, point2):
     x_diff = x2 - x1
     y_diff = y2 - y1
     
-    # 3. Pythagorean Theorem: a^2 + b^2 = c^2 [cite: 6, 8]
-    # We square the differences
+    # 3. Pythagorean Theorem: a^2 + b^2 = c^2
+    # Squared
     a_squared = x_diff ** 2
     b_squared = y_diff ** 2
     

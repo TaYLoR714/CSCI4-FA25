@@ -59,4 +59,3 @@ p1 = [2, 4]
 p2 = [-1, -8]
 distance = euclidean_distance(p1, p2)
 print(f"Second Euclidean distance between {p1} and {p2}: {distance}")
-

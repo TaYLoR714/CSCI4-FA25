@@ -3,7 +3,7 @@
 # import Fernet from the cryptography library
 from cryptography.fernet import Fernet
 
-def run_encryption_demo():
+def run_encryption_key():
     # 1. Generate a Key / Password
     key = Fernet.generate_key()
     
@@ -11,7 +11,7 @@ def run_encryption_demo():
     cipher_suite = Fernet(key)
     
     # 3. The Message -  encrypt this text. It must be encoded to bytes (b'').
-    original_message = b"This is a secret message for the final paper."
+    original_message = b"This is a secret message for EVAN DRAKE."
     print(f"Original: {original_message}")
 
     # 4. Encrypt - Automatically encrypts the message
@@ -24,4 +24,4 @@ def run_encryption_demo():
 
 # Execute the code
 if __name__ == "__main__":
-    run_encryption_demo() 
+    run_encryption_key() 
